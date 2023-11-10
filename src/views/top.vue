@@ -769,34 +769,36 @@ async function login() {
 
   if (myPubkey.value) {
     logined.value = true;
+    // countOfDisplayEvents *= 2;
 
-    if (windowNostr?.getRelays) {
-      const firstRelays = await windowNostr.getRelays();
-      console.log("NIP-07 First relay = ", JSON.stringify(firstRelays));
+    // if (windowNostr?.getRelays) {
+    //   const firstRelays = await windowNostr.getRelays();
+    //   console.log("NIP-07 First relay = ", JSON.stringify(firstRelays));
 
-      if (false && Object.keys(firstRelays).length === 0) {
-        window.alert("NIP-07拡張機能にリレーリストを設定するのをおすすめしています。");
-      }
-      for (const r in firstRelays) {
-        if (firstRelays[r].read) {
-          myReadRelays.value.push(r);
-        }
-        if (firstRelays[r].write) {
-          myWriteRelays.value.push(r);
-        }
-      }
+    //   if (false && Object.keys(firstRelays).length === 0) {
+    //     window.alert("NIP-07拡張機能にリレーリストを設定するのをおすすめしています。");
+    //   }
+    //   for (const r in firstRelays) {
+    //     if (firstRelays[r].read) {
+    //       myReadRelays.value.push(r);
+    //     }
+    //     if (firstRelays[r].write) {
+    //       myWriteRelays.value.push(r);
+    //     }
+    //   }
 
-      console.log("NIP-07 First read relay: ", JSON.stringify(myReadRelays.value));
-      console.log("NIP-07 First write relay: ", JSON.stringify(myWriteRelays.value));
-    }
-    collectMyRelay();
+    //   console.log("NIP-07 First read relay: ", JSON.stringify(myReadRelays.value));
+    //   console.log("NIP-07 First write relay: ", JSON.stringify(myWriteRelays.value));
+    // }
+    // collectMyRelay();
     collectMyBlockList();
-    if (!noteId.value && !npubId.value) {
-      setTimeout(() => {
-        collectFollowsAndSubscribe();
-        subscribeReactions();
-      }, 1000);
-    }
+    // if (!noteId.value && !npubId.value) {
+    //   setTimeout(() => {
+        // ログインしてもfeedRelaysのみからイベントを取得したいので無効化
+        // collectFollowsAndSubscribe();
+        // subscribeReactions();
+      // }, 1000);
+    // }
   }
 }
 
