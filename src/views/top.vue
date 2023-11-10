@@ -1034,8 +1034,8 @@ async function postEvent(event: Nostr.Event) {
     if (soundEffect.value) {
       playActionSound();
     }
-
-    addEvent(event);
+    // 投稿失敗した場合にTLに反映しないように
+    // addEvent(event);
   }
 }
 
