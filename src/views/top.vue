@@ -1029,7 +1029,7 @@ async function postEvent(event: Nostr.Event) {
   if (windowNostr) {
     event = await windowNostr.signEvent(JSON.parse(JSON.stringify(event)));
 
-    pool.publish(event, normalizeUrls(myWriteRelays.value));
+    pool.publish(event, normalizeUrls(feedRelays));
 
     if (soundEffect.value) {
       playActionSound();
