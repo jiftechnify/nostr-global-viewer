@@ -23,10 +23,9 @@ const nip07exists = true;
   <div class="p-index-intro">
     <h2 class="p-index-intro__head"><span>このリレーについて</span></h2>
     <p class="p-index-intro__text">
-      wss://srtrelay.c-stellar.netは、しりとりが成立していないと投稿できない特殊リレーです。詳しいルールは以下の通り。
+      wss://srtrelay.c-stellar.net(通称・しりとリレー)は、しりとりが成立していないと投稿できない特殊リレーです。詳しいルールは以下の通り。
     </p>
     <ul>
-      <li>ひらがな・カタカナのみ投稿可</li>
       <li>「゛」・「゜」がつく文字で終わる場合、それを除いた文字から続けてもよい</li>
       <li>「ぁ」などの小文字で終わる場合、それを大きくした文字から続けてもよい</li>
       <li>
@@ -40,15 +39,21 @@ const nip07exists = true;
       </li>
       <li>「ー」(のばす音)で終わる場合、その前の文字から続ける</li>
     </ul>
+    <p class="p-index-intro__text">
+      どう続ければよいかわからなくなったら、「!next」または「!次」と投稿してみてね!
+    </p>
     <h2 class="p-index-intro__head">ライセンス、ソースコードなど</h2>
     <p class="p-index-intro__text">このサイトのソースコードは<a href="https://github.com/imksoo/nostr-global-viewer"
-        class="p-index-intro__text-link" target="_blank">GitHub</a>にあります。
+        class="p-index-intro__text-link" target="_blank">こちら</a>にあるものを一部改変したものです。
     </p>
     <p class="p-index-intro__text">
       <a href="https://awayuki.github.io/emojis.html" target="_blank" class="p-index-intro__text-link">SUSHIYUKI
         emojis (©awayuki)</a> の絵文字素材や
       <a href="https://soundeffect-lab.info/" target="_blank" class="p-index-intro__text-link">効果音ラボ</a>
       の効果音素材を利用しています。
+    </p>
+    <p class="p-index-intro__text">
+      しりとリレーのソースコードは<a href="https://github.com/jiftechnify/nostr-shiritori-relay" class="p-index-intro__text-link" target="_blank">こちら</a>にあります。
     </p>
   </div>
 </template>
