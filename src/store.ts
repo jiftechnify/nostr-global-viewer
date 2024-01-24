@@ -11,7 +11,7 @@ export const profileRelays = [
   "wss://ipv6.nostr.wirednet.jp/",
   "wss://nos.lol/",
   "wss://relay.nostr.band/",
-  "wss://relayable.org/",
+  "wss://purplepag.es/",
   "wss://directory.yabu.me/",
 ];
 
