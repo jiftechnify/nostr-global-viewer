@@ -20,7 +20,7 @@
 .c-post-body {
   position: relative;
   z-index: 10;
-  background-color: #ffffff;
+  background: hsl(10, 100%, 99%);
   max-width: 640px;
   width: calc(100% - 40px);
   box-sizing: border-box;
@@ -37,7 +37,7 @@
     border: solid 2px #fff;
     margin: 0;
     padding: 0;
-    background: #fc5fa1;
+    background: hsl(10, 100%, 70%);
     width: 32px;
     height: 32px;
     box-sizing: border-box;
@@ -49,7 +49,7 @@
 
   &__icon {
     font-size: 18px;
-    color: #fff;
+    color: hsl(180, 100%, 98%);
     font-weight: bold;
     display: block;
     line-height: 1;
@@ -59,8 +59,8 @@
 
 .b-login,
 .b-post {
-  background-color: #fc5fa1;
-  color: #ffffff;
+  background-color: hsl(180, 100%, 42%);
+  color: hsl(180, 100%, 98%);
   display: inline-block;
   padding: 0.5rem 1.4rem;
   border-radius: 2rem;
@@ -76,7 +76,7 @@
 
 .b-login:hover,
 .b-post:hover {
-  background-color: #df3d81;
+  background-color: hsl(180, 100%, 40%);
 }
 
 .i-note {

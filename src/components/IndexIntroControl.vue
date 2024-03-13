@@ -25,7 +25,7 @@ const nip07exists = true;
     <p class="p-index-intro__text">
       wss://srtrelay.c-stellar.net(通称・しりとリレー)は、しりとりが成立していないと投稿できない特殊リレーです。詳しいルールは以下の通り。
     </p>
-    <ul>
+    <ul class="p-index-intro__rules">
       <li>「゛」・「゜」がつく文字で終わる場合、それを除いた文字から続けてもよい</li>
       <li>「ぁ」などの小文字で終わる場合、それを大きくした文字から続けてもよい</li>
       <li>
@@ -59,7 +59,7 @@ const nip07exists = true;
 </template>
 <style scoped lang="scss">
 .p-index-signin {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   padding: 12px;
   display: flex;
@@ -79,8 +79,9 @@ const nip07exists = true;
   }
 
   &__btn {
-    background-color: #fc5fa1;
-    color: #ffffff;
+    background-color: hsl(180, 100%, 42%);
+    color: hsl(180, 100%, 98%);
+    font-weight: bold;
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -92,7 +93,7 @@ const nip07exists = true;
     cursor: pointer;
 
     &:hover {
-      background-color: #df3d81;
+      background-color: hsl(180, 100%, 40%);
     }
   }
 }
@@ -106,7 +107,7 @@ const nip07exists = true;
 
   &__head {
     font-size: 1.4rem;
-    color: gold;
+    color: hsl(39, 100%, 55%);
     display: flex;
     gap: 0.4rem;
     align-items: center;
@@ -116,14 +117,14 @@ const nip07exists = true;
       content: "";
       flex-grow: 1;
       height: 2px;
-      background-color: gold;
+      background-color: hsl(39, 100%, 55%);
     }
 
     &::after {
       content: "";
       flex-grow: 1;
       height: 2px;
-      background-color: gold;
+      background-color: hsl(39, 100%, 55%);
     }
 
     span {
@@ -134,14 +135,14 @@ const nip07exists = true;
   }
 
   &__text {
-    color: #ffffff;
+    color: hsl(10, 100%, 72%);
     margin: 0;
     line-height: 1.8;
     margin-top: 0.3rem;
   }
 
   &__text-link {
-    color: #fc5fa1;
+    color: hsl(180, 100%, 40%);
     font-weight: bold;
   }
 
@@ -149,8 +150,12 @@ const nip07exists = true;
     display: inline-block;
   }
 
+  &__rules {
+    color: hsl(10, 100%, 72%);
+  }
+
   &__btn {
-    background-color: #fc5fa1;
+    background-color: hsl(180, 100%, 42%);
     color: #ffffff;
     display: block;
     padding: 0.5rem 1.4rem;
@@ -162,7 +167,7 @@ const nip07exists = true;
   }
 
   &__btn:hover {
-    background-color: #df3d81;
+    background-color: hsl(180, 100%, 40%);
   }
 
   .vu {

@@ -42,7 +42,7 @@ const nip07exists = true;
 
 <style scoped lang="scss">
 .p-index-auto-login {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   padding: 8px;
   display: flex;
@@ -89,7 +89,7 @@ const nip07exists = true;
 }
 
 .p-index-auto-login-cb__input:checked+.p-index-auto-login-cb__dummy {
-  background: #df3d81;
+  background: hsl(180, 100%, 40%);
 }
 
 .p-index-auto-login-cb__input:checked+.p-index-auto-login-cb__dummy::before {

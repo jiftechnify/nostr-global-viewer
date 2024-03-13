@@ -13,16 +13,16 @@ function appVersion() {
 </script>
 <template>
   <h1 class="p-index-title">
-    <a href="/" :class="(Math.floor(new Date().getTime() / 1000) % 10 === 0) ? ['gaming'] : []">
+    <a href="/">
       <span class="p-index-title__main">Nozokimado</span>
     </a>
     <span class="p-index-title__sub">From
       {{
-        props.feedRelays
-          .map((s) => {
-            return s.replace(/wss?:\/\/(.*)\//, "$1");
-          })
-          .join(",")
+      props.feedRelays
+      .map((s) => {
+      return s.replace(/wss?:\/\/(.*)\//, "$1");
+      })
+      .join(",")
       }}</span>
     <span class="p-index-title__sub">Version: {{ appVersion() }}</span>
   </h1>
@@ -31,7 +31,6 @@ function appVersion() {
 .p-index-title {
   font-family: "Anton", sans-serif;
   letter-spacing: normal;
-  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
@@ -46,7 +45,8 @@ function appVersion() {
 
   &__main {
     font-size: 4rem;
-    color: #ffffff;
+    color: hsl(10, 100%, 70%);
+    text-shadow: hsl(180, 100%, 85%) 5px -2px;
 
     @media screen and (max-width: 880px) {
       font-size: 3rem;
@@ -55,6 +55,7 @@ function appVersion() {
 
   &__sub {
     font-size: 1.5rem;
+    color: hsl(10, 100%, 82%);
 
     @media screen and (max-width: 880px) {
       font-size: 1.5rem;
@@ -63,10 +64,10 @@ function appVersion() {
   }
 }
 
-.p-index-title a.gaming {
+/* .p-index-title a.gaming {
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
   background-image: linear-gradient(to top right, red 20%, orange 25% 35%, yellow 45% 55%, green 65% 75%, blue 80% 95%, violet 100%);
-}
+} */
 </style>

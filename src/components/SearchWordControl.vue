@@ -76,7 +76,7 @@ const eventType = computed({
 
 <style scoped lang="scss">
 .p-index-search {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   padding: 8px;
   display: flex;

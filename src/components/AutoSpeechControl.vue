@@ -52,7 +52,7 @@ const autoSpeech = computed({
 
 <style scoped lang="scss">
 .p-index-speech {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 6px;
   padding: 8px;
   display: flex;
@@ -99,7 +99,7 @@ const autoSpeech = computed({
 }
 
 .p-index-speech-cb__input:checked + .p-index-speech-cb__dummy {
-  background: #df3d81;
+  background: hsl(180, 100%, 40%);
 }
 
 .p-index-speech-cb__input:checked + .p-index-speech-cb__dummy::before {

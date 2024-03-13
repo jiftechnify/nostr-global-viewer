@@ -86,7 +86,7 @@
 
   &__textarea {
     flex-grow: 1;
-  }
+  } 
 }
 
 .p-index-post--isLogin {
@@ -106,10 +106,10 @@
   }
 
   &__btn {
-    border: solid 2px #fff;
+    border: solid 2px hsl(180, 100%, 98%);
     margin: 0;
     padding: 0;
-    background: #fc5fa1;
+    background: hsl(180, 100%, 42%);
     width: 60px;
     height: 60px;
     box-sizing: border-box;
@@ -126,7 +126,7 @@
 
   &__icon {
     font-size: 40px;
-    color: #fff;
+    color: hsl(180, 100%, 98%);
     font-weight: bold;
     display: block;
     line-height: 1;
@@ -148,10 +148,10 @@
   }
 
   &__btn {
-    border: solid 2px #fff;
+    border: solid 2px hsl(180, 100%, 98%);;
     margin: 0;
     padding: 0;
-    background: #fc5fa1;
+    background: hsl(180, 100%, 42%);
     width: 60px;
     height: 60px;
     box-sizing: border-box;
@@ -168,7 +168,7 @@
 
   &__icon {
     font-size: 40px;
-    color: #fff;
+    color: hsl(180, 100%, 98%);
     font-weight: bold;
     display: block;
     line-height: 1;

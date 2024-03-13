@@ -1646,7 +1646,7 @@ function showMore() {
 
 .c-feed-item {
   margin-top: 5px;
-  background-color: #ffffff;
+  background: hsl(10, 100%, 99%);
   border-radius: 4px;
   box-sizing: border-box;
   padding: 10px;
@@ -1658,7 +1658,7 @@ function showMore() {
 }
 
 .p-index-post__help {
-  color: #050a30;
+  color: hsl(10, 100%, 72%);
 }
 
 .p-index-profile {
@@ -1688,7 +1688,7 @@ function showMore() {
 .p-index-footer button {
   flex-grow: 1;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: hsl(10, 100%, 99%);
   color: #050a30;
 }
 
