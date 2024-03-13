@@ -6,9 +6,6 @@ import { RelayPool } from "nostr-relaypool";
 export const feedRelays = ["wss://srtrelay.c-stellar.net/"];
 
 export const profileRelays = [
-  "wss://bostr.nokotaro.com/",
-  "wss://bostr.nokotaro.work/",
-  "wss://ipv6.nostr.wirednet.jp/",
   "wss://nos.lol/",
   "wss://relay.nostr.band/",
   "wss://purplepag.es/",
